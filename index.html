@@ -7,36 +7,41 @@
     <title>AI recipes generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI recipes generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI recipes generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the name of a recipe"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Recipe line 1
-        <br />
-        Recipe line 2
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the name of a recipe"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="recipe">
+          Recipe line 1
+          <br />
+          Recipe line 2
+        </div>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/viola-delia" target="_blank">Viola D'Elia</a>
-      and is open sourced on
-      <a href="https://github.com/viola-delia/AI-project" target="_blank"
-        >GitHub</a
-      >
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/viola-delia" target="_blank"
+          >Viola D'Elia</a
+        >
+        and is open sourced on
+        <a href="https://github.com/viola-delia/AI-project" target="_blank"
+          >GitHub</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
