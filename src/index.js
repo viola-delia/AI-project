@@ -17,9 +17,13 @@ event.preventDefault();
 
 let instructionsInput = document.querySelector("#instructions");
 let apiKey = "35te54ac48ff3dd030f2e92oaf3b5d78";
-let prompt = `Please generate the recipe of ${instructionsInput.value} including all the different steps and ingredients. Show the recipe in basic HTML for a better UX`;
+let prompt = `Please generate the recipe of ${instructionsInput.value} including all the different steps and ingredients. Show the recipe in basic HTML for a better UX. Only replu with the recipe, no need to add any other reply.`;
 let context = "You are a master chef with a lot of knowledge in recipes from all over the world";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+let recipeElement = document.querySelector("#recipe");
+recipeElement.classList.remove("hidden");
+recipeElement.innerHTML = `<span class="blink">⏳</span>Generating the recipe for you, please wait (can take up to 30 seconds).`
 
 console.log(`Prompt : ${prompt}`);
 
